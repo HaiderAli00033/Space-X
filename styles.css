@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: transparent;
+    padding: 0 2rem;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-family: 'Roboto', sans-serif;
+    transition: top 0.3s;
+}
+
+.navf {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.links ul {
+    margin-left: 60px;
+    list-style-type: none;
+    font-size: 25px;
+    display: flex;
+    font-size: 12px;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 800;
+}
+
+.navm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section1 {
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/PSN_Satria_vertical_061823_DSC_2262_a049922167.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.con {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.section1 p {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    max-width: 500px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#btn-sec1 {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+    z-index: 1; /* Ensure the button text is above the pseudo-element */
+    color: black; /* Set the initial text color to black */
+}
+
+#btn-sec1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Set the background color to black */
+    transition: transform 0.5s ease-in-out;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    z-index: -1; /* Place the pseudo-element below the button text */
+}
+
+#btn-sec1:hover{
+    outline: none;
+    cursor: pointer;
+    color: black; /* Change text color to white on hover or focus */
+}
+
+#btn-sec1:hover::before{
+    transform: scaleX(1) translateY(-100%);
+}
+
+#btn-sec1:hover::before {
+    transform: scaleY(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.section2 {
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Trans_9_7747_SW_Hill_Horiz_Desktop_75241caad0.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    line-height: 1.6;
+    color: white;   
+}
+
+.nav-hidden {
+    top: -50px; /* Move the hidden navbar above the viewport */
+}
+.section2 p {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    max-width: 500px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.section3 {
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/CRS_29_ccsfs_DSC_0750_desktop_6f976c8d20.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    line-height: 1.6;
+    color: white;   
+}
+
+.section3 p {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    max-width: 500px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+footer ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+#li-low {
+    color: rgb(204, 203, 203);
+}
