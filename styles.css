@@ -201,3 +201,48 @@ footer a {
 #li-low {
     color: rgb(204, 203, 203);
 }
+
+.menu-pc {
+    height: 100vh;
+    width: 25%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    z-index: 999;
+    overflow-x: hidden;
+    transition: all .7s ease-in-out;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    color: white;
+    flex-direction: column;
+}
+
+.menclo {
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    margin-bottom: 2rem;
+    transition: all .7s ease-in-out;
+}
+
+.menu-pc p {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.menu-pc p:hover {
+    transform: translateX(-8%);
+    color: rgb(211, 203, 203);
+}
+
+.menu-pc.hidden {
+    right: -25%; 
+}
